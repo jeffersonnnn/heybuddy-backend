@@ -68,27 +68,27 @@ describe("flag.helper", () => {
   };
 
   const testUser: User = {
-    country: "US",
+    // country: "US",
     email: "test@example.com",
     firstName: "Test",
     id: "user1",
-    language: "en_US",
+    // language: "en_US",
     lastName: "User",
   };
   const testUser2: User = {
-    country: "US",
+    // country: "US",
     email: "test2@example.com",
     firstName: "Test",
     id: "user2",
-    language: "en_US",
+    // language: "en_US",
     lastName: "User",
   };
   const testUser3: User = {
-    country: "CA",
+    // country: "CA",
     email: "test3@example.com",
     firstName: "Test",
     id: "user3",
-    language: "fr_CA",
+    // language: "fr_CA",
     lastName: "User",
   };
 
