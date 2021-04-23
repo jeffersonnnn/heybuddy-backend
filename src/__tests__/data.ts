@@ -517,7 +517,7 @@ const loadData = async (connection: Connection) => {
 
     logger.info("Adding 4 test users to database");
     const guestUser: User = connection.manager.create(User, {
-      age: 0,
+      // age: 0,
       email: "guest@example.com",
       firstName: "Guest",
       lastName: "User",
@@ -527,7 +527,7 @@ const loadData = async (connection: Connection) => {
     await connection.manager.save(guestUser);
 
     const userUser: User = connection.manager.create(User, {
-      age: 20,
+      // age: 20,
       email: "user@example.com",
       firstName: "Basic",
       lastName: "User",
@@ -537,22 +537,22 @@ const loadData = async (connection: Connection) => {
     await connection.manager.save(userUser);
 
     const adminUser: User = connection.manager.create(User, {
-      age: 30,
-      avatar: "http://example.com/me/1234567.jpg",
-      country: "US",
+      // age: 30,
+      // avatar: "http://example.com/me/1234567.jpg",
+      // country: "US",
       email: "admin@example.com",
       firstName: "Admin",
-      ip: "FE80:0000:0000:0000:0202:B3FF:FE1E:8329", // IPV6
-      language: "en_US",
+      // ip: "FE80:0000:0000:0000:0202:B3FF:FE1E:8329", // IPV6
+      // language: "en_US",
       lastName: "User",
       password: await hashPassword("changeme"),
       roles: [userRole, adminRole],
-      timeZone: "America/Mountain",
+      // timeZone: "America/Mountain",
     });
     await connection.manager.save(adminUser);
 
     const sysadminUser: User = connection.manager.create(User, {
-      age: 40,
+      // age: 40,
       email: "sysadmin@example.com",
       firstName: "Sysadmin",
       lastName: "User",

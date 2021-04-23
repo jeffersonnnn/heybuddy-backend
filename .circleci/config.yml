@@ -84,4 +84,4 @@ workflows:
   build-and-test:
     jobs:
       - build:
-          context: auth-example-app
+          context: heybuddy-backend
