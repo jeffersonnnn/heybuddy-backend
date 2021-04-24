@@ -22,23 +22,23 @@ export class User {
   @Column({ nullable: true })
   public password?: string;
 
-  // @Column({ nullable: true })
-  // public avatar?: string;
+  @Column({ nullable: true })
+  public avatar?: string;
 
-  // @Column({ nullable: true })
-  // public country?: string;
+  @Column({ nullable: true })
+  public country?: string;
 
-  // @Column({ nullable: true })
-  // public timeZone?: string;
+  @Column({ nullable: true })
+  public timeZone?: string;
 
-  // @Column({ nullable: true })
-  // public language?: string;
+  @Column({ nullable: true })
+  public language?: string;
 
-  // @Column({ nullable: true })
-  // public ip?: string;
+  @Column({ nullable: true })
+  public ip?: string;
 
-  // @Column({ nullable: true })
-  // public age?: number;
+  @Column({ nullable: true })
+  public age?: number;
 
   public surrogateEnabled?: boolean;
 
