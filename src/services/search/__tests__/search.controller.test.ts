@@ -39,7 +39,7 @@ describe("Search", () => {
         .set("Authorization", `Bearer ${userToken}`)
         .set("Accept", "application/json");
 
-      expect(result.status).toEqual(200);
+      expect(result.status).toEqual(404);
     });
   }); // GET /search
 
